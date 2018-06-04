@@ -1,0 +1,168 @@
+body {
+  background-color: #999999;
+  color: white;
+}
+
+.mainContainer {
+  position: relative;
+  opacity: 0;
+}
+
+.loadIn {
+  -webkit-animation: fade 0.3s ease-in-out forwards;
+	-moz-animation: fade 0.3s ease-in-out forwards;
+	-o-animation: fade 0.3s ease-in-out forwards;
+	animation: fade .3s ease-in-out forwards;
+}
+
+.searchContainer {
+  margin: 2em auto 0 auto;
+  width: 50%;
+  border: 6px solid #1b6a83;
+  border-top-left-radius: 96px;
+  border-top-right-radius: 96px;
+  padding: 20px 42px;
+  text-align: center;
+  background: linear-gradient(#459bb6, #145367);
+  font-family: "Verdana", monospace;
+  line-height: 2em;
+}
+
+.resultsContainer {
+  margin: auto;
+  width: 50%;
+  border: 6px solid #1b6a83;
+  border-top: none;
+  border-bottom-left-radius: 96px;
+  border-bottom-right-radius: 96px;
+  padding: 20px 42px;
+  text-align: center;
+  background: linear-gradient(#a43030, #cc5656);
+}
+
+.typeBox {
+  margin: auto;
+  width: 50%;
+  border: 6px solid #408195;
+  border-radius: 16px;
+  background-color: #196279;
+}
+
+p {
+  line-height: 1;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+li.fromP {
+  list-style:none;
+  display: inline-block;
+  width:45%;
+  border: 3px solid #196279;
+  border-radius: 18px;
+  background-color: #408195;
+}
+
+h1, h3 {
+  color: white;
+  text-shadow: -1px 0 #655656, 0 1px #655656, 1px 0 #655656, 0 -1px #655656;
+  margin: 0;
+  margin-top: -1em;
+  padding: 0;
+}
+
+input[type=text] {
+  margin-top: 1em;
+  border-radius: 18px;
+  border: 3px solid #408195;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+input[type=radio] {
+  cursor: pointer;
+  margin: 5px;
+}
+
+mark {
+  background-color: #32c4f2;
+  color: white;
+  border-radius: 1px;
+  margin-left: -2px;
+  padding-left: 2px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+    position: relative;
+    background: #bd6565;
+    padding: .5em;
+    width: auto;
+    margin: 3px 5em;
+    color: white;
+    border-radius: 16px;
+    font-family: "Arial";
+    text-transform: lowercase;
+    text-shadow: -1px 0 #655656, 0 1px #655656, 1px 0 #655656, 0 -1px #655656;
+    letter-spacing: 2px;
+    opacity: 0;
+}
+
+ul li:hover {
+  background: #ff802f;
+  cursor: pointer;
+}
+
+ul li.show {
+  -webkit-animation: fade 0.5s ease-in-out forwards;
+	-moz-animation: fade 0.5s ease-in-out forwards;
+	-o-animation: fade 0.5s ease-in-out forwards;
+	animation: fade .5s ease-in-out forwards;
+}
+
+@keyframes fade {
+  0% {top: -30px; opacity: 0.1;}
+  15% {top: -20px; opacity: 0.2;}
+  30% {top: -10px; opacity: 0.4;}
+  50% {top: 0; opacity: 0.6;}
+  60% {top: 10px; opacity: 0.6;}
+  75% {top: 5px; opacity: 0.8;}
+	100% { top: 0px; opacity: 1;}
+}
+
+@-webkit-keyframes fade {
+  0% {top: -30px; opacity: 0.1;}
+  15% {top: -20px; opacity: 0.2;}
+  30% {top: -10px; opacity: 0.4;}
+  50% {top: 0; opacity: 0.6;}
+  60% {top: 10px; opacity: 0.6;}
+  75% {top: 5px; opacity: 0.8;}
+	100% { top: 0px; opacity: 1;}
+}
+
+@-moz-keyframes fade {
+  0% {top: -30px; opacity: 0.1;}
+  15% {top: -20px; opacity: 0.2;}
+  30% {top: -10px; opacity: 0.4;}
+  50% {top: 0; opacity: 0.6;}
+  60% {top: 10px; opacity: 0.6;}
+  75% {top: 5px; opacity: 0.8;}
+	100% { top: 0px; opacity: 1;}
+}
+
+@-o-keyframes fade {
+  0% {top: -30px; opacity: 0.1;}
+  15% {top: -20px; opacity: 0.2;}
+  30% {top: -10px; opacity: 0.4;}
+  50% {top: 0; opacity: 0.6;}
+  60% {top: 10px; opacity: 0.6;}
+  75% {top: 5px; opacity: 0.8;}
+	100% { top: 0px; opacity: 1;}
+}

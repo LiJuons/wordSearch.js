@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>StringMatching</title>
+  <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+
+  <div class="mainContainer loadIn">
+
+    <div class="searchContainer">
+      <h1>Simple Search of Words</h1>
+      <p>
+        Every word is somehow related to fruit. This search uses two algorithms:<br>
+        <li class="fromP"> <b>Trie algorithm</b>, which uses data structure called Tree for faster approach.</li>
+        <li class="fromP"> <b>Char algorithm</b>, which is a simple algorithm that filters data by characters.</li>
+      </p>
+      <h3>Choose your search type:</h3>
+
+      <div class="typeBox">
+        <input type="radio" name="algoS" value="1" checked onclick="mainFunc()">Trie</input>
+        <input type="radio" name="algoS" value="0" onclick="mainFunc()">Char</input>
+      </div>
+
+      <input type="text" id="searchBox" oninput="mainFunc()" autofocus></input>
+
+      <script  type="text/javascript" src="search.js"></script>
+
+    </div>
+
+    <div class="resultsContainer fade">
+
+        <ul class="resultsList" id="resultsList">
+          <li class="show">try typing something</li>
+        </ul>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
